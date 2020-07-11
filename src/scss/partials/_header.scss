@@ -1,0 +1,122 @@
+header {
+
+  padding-top: $nav_height;
+
+  .container {
+
+    // height: $header_height;
+    width: 100%;
+
+
+
+    nav {
+
+      min-width: 1200px;
+
+
+      height: $nav_height;
+      line-height: $nav_height;
+      font-size: 1.1em;
+      background-color: #ffffff;
+      width: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 0 $sidespace;
+      display: flex;
+      justify-content: space-between;
+
+      .col-logo {
+
+        height: 100%;
+        width: 160px;
+
+        img {
+
+          display: block;
+          height: 100%;
+          width: 100%;
+
+        }
+
+      }
+
+      .hamburger-menu {
+        display: none;
+        font-size: 40px;
+      }
+
+      ul.menu {
+
+        li {
+
+          list-style-type: none;
+          margin-left: 30px;
+          display: inline-block;
+
+          a {
+
+            color: $secondary_color;
+
+          }
+
+          a.sign-up {
+
+            @include my-button;
+            padding: 15px;
+            color: #2c4792;
+            background-color: #5b70aa;
+
+
+          }
+
+        }
+
+      }
+
+    }
+
+    hr {
+
+      position: fixed;
+      width: calc(100% - #{$sidespace * 2});
+      top: calc(#{$nav_height} - 2px);
+      color: $secondary_color;
+    }
+
+    .jumbotron {
+
+      margin-top: 60px;
+      display: flex;
+
+      .teaser {
+        flex-basis: 50%;
+        margin-right: 30px;
+        margin-bottom: 60px;
+
+        h2 {
+          font-size: 1.4em;
+          font-weight: lighter;
+          line-height: 40px;
+          margin-bottom: 50px;
+        }
+
+        .cta {
+
+          @include call-to-action;
+
+        }
+      }
+
+      .background-image {
+        flex-basis: 50%;
+        img {
+          width: 100%;
+        }
+      }
+
+    }
+
+  }
+
+}
