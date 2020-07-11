@@ -38,35 +38,34 @@ h1 {
 
 
 
-
-footer {
-  .container-flex {
-
-    height: $header_height;
-    background-color: grey;
-    display: flex;
-
-  }
-}
-
-header,
-footer {
-
-  padding-left: $sidespace;
-  padding-right: $sidespace;
-
-}
-
-
+//
+// footer {
+//   .container-flex {
+//
+//     height: $header_height;
+//     background-color: grey;
+//     display: flex;
+//
+//   }
+// }
+//
+// footer {
+//
+//   padding-left: $sidespace;
+//   padding-right: $sidespace;
+//
+// }
+//
 
 
 
 
-
-
-.col {
-  height: 100%;
-  float: left;
-  background-color: yellow;
-  width: calc(100% / 7);
-}
+//
+//
+//
+// .col {
+//   height: 100%;
+//   float: left;
+//   background-color: yellow;
+//   width: calc(100% / 7);
+// }

@@ -1,0 +1,67 @@
+main {
+  text-align: center;
+
+  .traditional-processes,
+  .teambit-solution {
+    background-color: $primary_color;
+    padding: 0 $sidespace;
+
+
+    & .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .col {
+        flex-basis: calc(100% / 3 - (#{$colmargin} * 2));
+
+        &:nth-child(2) {
+          margin: 0 $colmargin;
+        }
+
+        div {
+          img {
+            height: 150px;
+          }
+
+        }
+
+
+      }
+
+      &.before {
+        border-bottom: 1px solid black;
+
+      }
+
+      &.before,
+      &.after {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+          height: 450px;
+        }
+      }
+    }
+  }
+  .how-it-works {
+    h3 {
+      background-color: $primary_color;
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 40px;
+
+    }
+
+    .row {
+      @include second_section_row;
+
+      &:nth-of-type(2n + 2) > .col > div {
+        float: right;
+      }
+    }
+
+  }
+
+}
