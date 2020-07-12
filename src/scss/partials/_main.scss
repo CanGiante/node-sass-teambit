@@ -1,13 +1,23 @@
 main {
   text-align: center;
 
+
   .traditional-processes,
   .teambit-solution {
     background-color: $primary_color;
     padding: 0 $sidespace;
 
+    h3 {
+      padding-top: 50px;
+      margin-bottom: 50px;
+      line-height: 50px;
+    }
 
-    & .row {
+    span {
+      font-weight: lighter;
+    }
+
+    .row {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -21,17 +31,14 @@ main {
 
         div {
           img {
-            height: 150px;
+            height: 120px;
+            margin-bottom: 50px;
           }
-
         }
-
-
       }
 
       &.before {
         border-bottom: 1px solid black;
-
       }
 
       &.before,
@@ -40,26 +47,114 @@ main {
         justify-content: space-around;
 
         img {
-          height: 450px;
+          height: 650px;
+          padding: 100px;
         }
       }
     }
   }
+
+  .teambit-solution {
+    padding-top: 50px;
+  }
+
   .how-it-works {
+
+    margin-bottom: 50px;
+
     h3 {
       background-color: $primary_color;
       text-align: center;
-      padding-top: 100px;
-      padding-bottom: 40px;
-
+      padding: 50px 0;
+      margin: 0;
     }
 
     .row {
+
       @include second_section_row;
 
       &:nth-of-type(2n + 2) > .col > div {
         float: right;
       }
+
+      h3 {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        line-height: 50px;
+      }
+
+      p {
+        font-weight: lighter;
+        font-size: 1.5em;
+        margin-bottom: 25px;
+      }
+
+      a {
+        color: $tertiary_color;
+        font-weight: lighter;
+        font-size: 1.3em;
+      }
+
+      img:nth-child(2n + 2) {
+        padding: 30px 80px 50px 0;
+      }
+
+    }
+
+  }
+
+  .get-started {
+    background-color: $primary_color;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      font-size: 3em;
+      line-height: 90px;
+      margin-bottom: 50px;
+
+      img {
+        margin-left: 5px;
+      }
+    }
+
+    .p-box {
+      text-align: left;
+      font-weight: lighter;
+      background-color: white;
+      margin: auto;
+      margin-bottom: 80px;
+      width: 545px;
+      border: 2px solid $tertiary_color;
+      border-radius: 10px;
+      padding: 20px 25px;
+
+      .signature-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+          height: 65px;
+          margin-right: 20px;
+        }
+
+        .signature {
+
+          span:first-child {
+            color: $tertiary_color;
+          }
+
+          span:nth-child(3) {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+
+    .cta {
+      @include call-to-action;
     }
 
   }

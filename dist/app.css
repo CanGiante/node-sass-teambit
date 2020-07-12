@@ -24,6 +24,10 @@ h1 {
   line-height: 75px;
 }
 
+h3 {
+  font-size: 2em;
+}
+
 header {
   padding: 0 150px;
   padding-top: 100px;
@@ -140,6 +144,16 @@ main .teambit-solution {
   background-color: #fee7d1;
   padding: 0 150px;
 }
+main .traditional-processes h3,
+main .teambit-solution h3 {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  line-height: 50px;
+}
+main .traditional-processes span,
+main .teambit-solution span {
+  font-weight: lighter;
+}
 main .traditional-processes .row,
 main .teambit-solution .row {
   display: flex;
@@ -156,7 +170,8 @@ main .teambit-solution .row .col:nth-child(2) {
 }
 main .traditional-processes .row .col div img,
 main .teambit-solution .row .col div img {
-  height: 150px;
+  height: 120px;
+  margin-bottom: 50px;
 }
 main .traditional-processes .row.before,
 main .teambit-solution .row.before {
@@ -171,16 +186,24 @@ main .teambit-solution .row.after {
 main .traditional-processes .row.before img, main .traditional-processes .row.after img,
 main .teambit-solution .row.before img,
 main .teambit-solution .row.after img {
-  height: 450px;
+  height: 650px;
+  padding: 100px;
+}
+main .teambit-solution {
+  padding-top: 50px;
+}
+main .how-it-works {
+  margin-bottom: 50px;
 }
 main .how-it-works h3 {
   background-color: #fee7d1;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 40px;
+  padding: 50px 0;
+  margin: 0;
 }
 main .how-it-works .row {
   display: flex;
+  margin-top: 50px;
 }
 main .how-it-works .row .col {
   flex-basis: calc(100% / 2);
@@ -199,4 +222,86 @@ main .how-it-works .row .col div h3 {
 }
 main .how-it-works .row:nth-of-type(2n + 2) > .col > div {
   float: right;
+}
+main .how-it-works .row h3 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  line-height: 50px;
+}
+main .how-it-works .row p {
+  font-weight: lighter;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+main .how-it-works .row a {
+  color: #2c4792;
+  font-weight: lighter;
+  font-size: 1.3em;
+}
+main .how-it-works .row img:nth-child(2n+2) {
+  padding: 30px 80px 50px 0;
+}
+main .get-started {
+  background-color: #fee7d1;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+main .get-started h4 {
+  font-size: 3em;
+  line-height: 90px;
+  margin-bottom: 50px;
+}
+main .get-started h4 img {
+  margin-left: 5px;
+}
+main .get-started .p-box {
+  text-align: left;
+  font-weight: lighter;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 80px;
+  width: 545px;
+  border: 2px solid #2c4792;
+  border-radius: 10px;
+  padding: 20px 25px;
+}
+main .get-started .p-box .signature-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .get-started .p-box .signature-box img {
+  height: 65px;
+  margin-right: 20px;
+}
+main .get-started .p-box .signature-box .signature span:first-child {
+  color: #2c4792;
+}
+main .get-started .p-box .signature-box .signature span:nth-child(3) {
+  font-size: 0.9em;
+}
+main .get-started .cta span {
+  font-weight: lighter;
+}
+main .get-started .cta a {
+  color: #58402c;
+}
+main .get-started .cta a.sign-up {
+  border: 1px solid #2c4792;
+  border-radius: 7px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #2c4792;
+  margin-bottom: 20px;
+}
+main .get-started .cta a.sign-up img {
+  width: 25px;
+  vertical-align: middle;
+}
+main .get-started .cta a.sign-up:first-child {
+  margin-right: 5px;
+}
+main .get-started .cta a.sign-up:nth-child(3) {
+  margin-left: 2.5px;
 }
