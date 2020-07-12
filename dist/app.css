@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+.site-wrapper {
+  min-width: 647px;
+}
+
 a {
   text-decoration: none;
 }
@@ -292,6 +296,11 @@ main .how-it-works .row .col div h3 {
 main .how-it-works .row:nth-of-type(2n + 2) > .col > div {
   float: right;
 }
+@media screen and (max-width: 1199px) {
+  main .how-it-works .row:nth-of-type(2n + 2) > .col > div {
+    float: none;
+  }
+}
 main .how-it-works .row h3 {
   margin-top: 10px;
   margin-bottom: 50px;
@@ -356,6 +365,9 @@ main .get-started .p-box .signature-box .signature span:first-child {
 main .get-started .p-box .signature-box .signature span:nth-child(3) {
   font-size: 0.9em;
 }
+main .get-started .cta {
+  padding-bottom: 50px;
+}
 main .get-started .cta span {
   font-weight: lighter;
 }
@@ -380,4 +392,28 @@ main .get-started .cta a.sign-up:first-child {
 }
 main .get-started .cta a.sign-up:nth-child(3) {
   margin-left: 3px;
+}
+
+footer {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+@media screen and (max-width: 1199px) {
+  footer {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+footer .container-flex {
+  background-color: grey;
+  display: flex;
+}
+footer .container-flex .col {
+  height: 100%;
+  float: left;
+  background-color: white;
+  width: calc(100% / 7);
+}
+footer .container-flex .col:first-child {
+  flex-grow: 1;
 }

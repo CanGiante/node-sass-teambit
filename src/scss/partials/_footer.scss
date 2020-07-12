@@ -1,0 +1,36 @@
+
+
+footer {
+
+  padding-left: $sidespace;
+  padding-right: $sidespace;
+
+  @media screen and (max-width: 1199px) {
+
+    padding-left: #{$sidespace / 2};
+    padding-right: #{$sidespace / 2};
+
+
+
+  }
+
+  .container-flex {
+
+    background-color: grey;
+    display: flex;
+
+    .col {
+      height: 100%;
+      float: left;
+      background-color: white;
+      width: calc(100% / 7);
+
+      &:first-child {
+        flex-grow: 1;
+
+      }
+    }
+
+
+  }
+}

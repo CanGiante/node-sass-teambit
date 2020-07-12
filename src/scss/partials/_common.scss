@@ -11,6 +11,10 @@ html {
   box-sizing: border-box;
 }
 
+.site-wrapper {
+  min-width: 647px;
+}
+
 a {
   text-decoration: none;
 }
@@ -24,37 +28,3 @@ h1 {
 h3 {
   font-size: 2em;
 }
-
-
-
-//
-// footer {
-//   .container-flex {
-//
-//     height: $header_height;
-//     background-color: grey;
-//     display: flex;
-//
-//   }
-// }
-//
-// footer {
-//
-//   padding-left: $sidespace;
-//   padding-right: $sidespace;
-//
-// }
-//
-
-
-
-
-//
-//
-//
-// .col {
-//   height: 100%;
-//   float: left;
-//   background-color: yellow;
-//   width: calc(100% / 7);
-// }

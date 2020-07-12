@@ -112,6 +112,10 @@ main {
 
       &:nth-of-type(2n + 2) > .col > div {
         float: right;
+
+        @media screen and (max-width: 1199px) {
+          float: none;
+        }
       }
 
       h3 {
@@ -197,6 +201,7 @@ main {
 
     .cta {
       @include call-to-action;
+      padding-bottom: 50px;
     }
 
   }
