@@ -26,14 +26,17 @@
 
     @include my-button;
 
+    display: inline-block;
+
+
     margin-bottom: 20px;
 
     &:first-child {
-      margin-right: 5px;
+      margin-right: 3px;
     }
 
     &:nth-child(3) {
-      margin-left: 2.5px;
+      margin-left: 3px;
     }
 
   }
@@ -56,11 +59,20 @@
       text-align: left;
       max-width: 60%;
 
+      @media screen and (max-width: 1199px) {
+        max-width: 100%;
+        text-align: center;
+      }
+
       h3 {
 
         background-color: inherit;
         text-align: left;
         padding: 0;
+
+        @media screen and (max-width: 1199px) {
+          text-align: center;
+        }
 
       }
 
