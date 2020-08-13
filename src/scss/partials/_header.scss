@@ -1,21 +1,22 @@
 header {
 
+  //common
   padding: 0 $sidespace;
   padding-top: $nav_height;
-
   @media screen and (max-width: 1199px) {
-
-    padding: 0 #{$sidespace / 2};
-    padding-top: $nav_height;
-
-
+      padding: 0 #{$sidespace / 2};
+      padding-top: $nav_height;
   }
-
+  @media screen and (max-width: 991px) {
+      padding: 0 #{$sidespace / 5};
+      padding-top: $nav_height;
+  }
 
   .container {
 
     width: 100%;
 
+    //navbar fixed (ends with a hr tag)
     nav {
 
       height: $nav_height;
@@ -23,20 +24,21 @@ header {
       font-size: 1.1em;
       background-color: #ffffff;
       width: 100%;
+      min-width: $site_min_width;
       position: fixed;
       left: 0;
       top: 0;
       padding: 0 $sidespace;
       display: flex;
       justify-content: space-between;
-
       @media screen and (max-width: 1199px) {
-
-        padding: 0 #{$sidespace / 2};
-    
-
+          padding: 0 #{$sidespace / 2};
+      }
+      @media screen and (max-width: 991px) {
+          padding: 0 #{$sidespace / 5};
       }
 
+      //logo
       .col-logo {
 
         height: 100%;
@@ -52,11 +54,13 @@ header {
 
       }
 
+      //menu hamburger
       .hamburger-menu {
         display: none;
         font-size: 40px;
       }
 
+      //menu normal
       ul.menu {
 
         li {
@@ -78,88 +82,89 @@ header {
             color: $tertiary_color;
             background-color: #5b70aa;
 
-
-
           }
 
         }
 
       }
-
       @media screen and (max-width: 1199px) {
-
-        .menu {
-          display: none;
-        }
-
-        .hamburger-menu {
-          display: block;
-        }
-
+          .menu {
+            display: none;
+          }
+          .hamburger-menu {
+            display: block;
+          }
       }
 
     }
 
     hr {
 
-      position: fixed;
-      width: calc(100% - #{$sidespace * 2});
-      top: calc(#{$nav_height} - 2px);
       color: $secondary_color;
-
+      position: fixed;
+      top: calc(#{$nav_height} - 2px);
+      width: calc(100% - #{$sidespace * 2});
+      min-width: calc(#{$site_min_width} - #{$sidespace / 2.5});
       @media screen and (max-width: 1199px) {
-
-        width: calc(100% - #{$sidespace});
-
-
+          width: calc(100% - #{$sidespace});
       }
-    }
+      @media screen and (max-width: 991px) {
+          width: calc(100% - ( #{$sidespace / 2.5} ) );
+      }
 
+    }
+    //end navbar
+
+    //jumbo
     .jumbotron {
 
       margin-top: 60px;
       display: flex;
 
-
-
       .teaser {
         flex-basis: 50%;
         margin-right: 30px;
         margin-bottom: 60px;
+        @media screen and (max-width: 1199px) {
+            margin-right: 0px;
+        }
 
         h2 {
-          font-size: 1.4em;
+
           font-weight: lighter;
           line-height: 40px;
-          margin-bottom: 50px;
+          margin-bottom: $linespacing;
+
         }
 
         .cta {
 
           @include call-to-action;
 
-
         }
+
       }
 
       .background-image {
         flex-basis: 50%;
+
         img {
+
           width: 100%;
+
         }
+
       }
-
       @media screen and (max-width: 1199px) {
-
-        flex-direction: column;
-        text-align: center;
-
+          flex-direction: column;
+          text-align: center;
       }
 
     }
-
-
+    //end jumbo
 
   }
+  //end container
 
 }
+//end header

@@ -12,7 +12,7 @@
 }
 
 .site-wrapper {
-  min-width: 647px;
+  min-width: 450px;
 }
 
 a {
@@ -24,8 +24,16 @@ h1 {
   line-height: 75px;
 }
 
+h2 {
+  font-size: 1.4em;
+}
+
 h3 {
   font-size: 2em;
+}
+
+h4 {
+  font-size: 3em;
 }
 
 header {
@@ -38,6 +46,12 @@ header {
     padding-top: 100px;
   }
 }
+@media screen and (max-width: 991px) {
+  header {
+    padding: 0 30px;
+    padding-top: 100px;
+  }
+}
 header .container {
   width: 100%;
 }
@@ -47,6 +61,7 @@ header .container nav {
   font-size: 1.1em;
   background-color: #ffffff;
   width: 100%;
+  min-width: 450px;
   position: fixed;
   left: 0;
   top: 0;
@@ -57,6 +72,11 @@ header .container nav {
 @media screen and (max-width: 1199px) {
   header .container nav {
     padding: 0 75px;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .container nav {
+    padding: 0 30px;
   }
 }
 header .container nav .col-logo {
@@ -103,14 +123,20 @@ header .container nav ul.menu li a.sign-up img {
   }
 }
 header .container hr {
-  position: fixed;
-  width: calc(100% - 300px);
-  top: calc(100px - 2px);
   color: #58402c;
+  position: fixed;
+  top: calc(100px - 2px);
+  width: calc(100% - 300px);
+  min-width: calc(450px - 60px);
 }
 @media screen and (max-width: 1199px) {
   header .container hr {
     width: calc(100% - 150px);
+  }
+}
+@media screen and (max-width: 991px) {
+  header .container hr {
+    width: calc(100% - ( 60px ) );
   }
 }
 header .container .jumbotron {
@@ -122,8 +148,12 @@ header .container .jumbotron .teaser {
   margin-right: 30px;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 1199px) {
+  header .container .jumbotron .teaser {
+    margin-right: 0px;
+  }
+}
 header .container .jumbotron .teaser h2 {
-  font-size: 1.4em;
   font-weight: lighter;
   line-height: 40px;
   margin-bottom: 50px;
@@ -242,7 +272,7 @@ main .traditional-processes .row.before img, main .traditional-processes .row.af
 main .teambit-solution .row.before img,
 main .teambit-solution .row.after img {
   height: 650px;
-  padding: 100px;
+  padding: 100px 0;
 }
 main .teambit-solution {
   padding-top: 50px;
@@ -332,7 +362,6 @@ main .get-started {
   flex-direction: column;
 }
 main .get-started h4 {
-  font-size: 3em;
   line-height: 90px;
   margin-bottom: 50px;
 }
@@ -345,7 +374,8 @@ main .get-started .p-box {
   background-color: white;
   margin: auto;
   margin-bottom: 80px;
-  width: 545px;
+  width: 85%;
+  max-width: 600px;
   border: 2px solid #2c4792;
   border-radius: 20px;
   padding: 20px 25px;

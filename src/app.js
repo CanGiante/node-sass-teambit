@@ -1,5 +1,6 @@
 //TO DO:
-//variabile linespacing 50px
+
 //footer
 //dropdown
-//commenti e refactoring
+//migliora visibilità in modalità mobile
+//hover vari

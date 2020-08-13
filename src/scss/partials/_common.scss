@@ -12,19 +12,26 @@ html {
 }
 
 .site-wrapper {
-  min-width: 647px;
+  min-width: $site_min_width;
 }
 
 a {
   text-decoration: none;
 }
 
-
 h1 {
   font-size: 3em;
   line-height: 75px;
 }
 
+h2 {
+  font-size: 1.4em;
+}
+
 h3 {
   font-size: 2em;
+}
+
+h4 {
+  font-size: 3em;
 }

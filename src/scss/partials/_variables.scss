@@ -1,7 +1,17 @@
-$sidespace: 150px;
-$nav_height: 100px;
-$header_height: 580px;
+//COLOR:
 $primary_color: #fee7d1;
 $secondary_color: #58402c;
 $tertiary_color: #2c4792;
+
+//OFFSET:
+$linespacing: 50px;
+$sidespace: 150px;
+///sections 1-2:
 $colmargin: 20px;
+
+//NAVBAR:
+$nav_height: 100px;
+$header_height: 580px;
+
+//RESPONSIVENESS:
+$site_min_width: 450px;
