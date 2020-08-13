@@ -4,11 +4,11 @@ header {
   padding: 0 $sidespace;
   padding-top: $nav_height;
   @media screen and (max-width: 1199px) {
-      padding: 0 #{$sidespace / 2};
+      padding: 0 #{$sidespace / $sidespace_divider_sm};
       padding-top: $nav_height;
   }
   @media screen and (max-width: 991px) {
-      padding: 0 #{$sidespace / 5};
+      padding: 0 #{$sidespace / $sidespace_divider_xs};
       padding-top: $nav_height;
   }
 
@@ -32,10 +32,10 @@ header {
       display: flex;
       justify-content: space-between;
       @media screen and (max-width: 1199px) {
-          padding: 0 #{$sidespace / 2};
+          padding: 0 #{$sidespace / $sidespace_divider_sm};
       }
       @media screen and (max-width: 991px) {
-          padding: 0 #{$sidespace / 5};
+          padding: 0 #{$sidespace / $sidespace_divider_xs};
       }
 
       //logo
@@ -104,12 +104,12 @@ header {
       position: fixed;
       top: calc(#{$nav_height} - 2px);
       width: calc(100% - #{$sidespace * 2});
-      min-width: calc(#{$site_min_width} - #{$sidespace / 2.5});
+      min-width: calc(#{$site_min_width} - #{$sidespace} / #{$sidespace_divider_xs / 2});
       @media screen and (max-width: 1199px) {
           width: calc(100% - #{$sidespace});
       }
       @media screen and (max-width: 991px) {
-          width: calc(100% - ( #{$sidespace / 2.5} ) );
+          width: calc(100% -  #{$sidespace} / #{$sidespace_divider_xs / 2});
       }
 
     }
@@ -140,12 +140,17 @@ header {
         .cta {
 
           @include call-to-action;
+          @media screen and (max-width: 991px) {
+              margin-right: -(#{$sidespace / 5});
+              margin-left: -(#{$sidespace / 5});
+          }
 
         }
 
       }
 
       .background-image {
+        
         flex-basis: 50%;
 
         img {

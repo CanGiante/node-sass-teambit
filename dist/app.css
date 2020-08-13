@@ -127,7 +127,7 @@ header .container hr {
   position: fixed;
   top: calc(100px - 2px);
   width: calc(100% - 300px);
-  min-width: calc(450px - 60px);
+  min-width: calc(450px - 150px / 2.5);
 }
 @media screen and (max-width: 1199px) {
   header .container hr {
@@ -136,7 +136,7 @@ header .container hr {
 }
 @media screen and (max-width: 991px) {
   header .container hr {
-    width: calc(100% - ( 60px ) );
+    width: calc(100% - 150px / 2.5);
   }
 }
 header .container .jumbotron {
@@ -182,6 +182,12 @@ header .container .jumbotron .teaser .cta a.sign-up:first-child {
 }
 header .container .jumbotron .teaser .cta a.sign-up:nth-child(3) {
   margin-left: 3px;
+}
+@media screen and (max-width: 991px) {
+  header .container .jumbotron .teaser .cta {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
 }
 header .container .jumbotron .background-image {
   flex-basis: 50%;
