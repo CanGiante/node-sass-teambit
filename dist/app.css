@@ -17,6 +17,11 @@
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
 }
 
 h1 {
@@ -34,6 +39,17 @@ h3 {
 
 h4 {
   font-size: 3em;
+}
+
+h5 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 header {
@@ -433,23 +449,72 @@ main .get-started .cta a.sign-up:nth-child(3) {
 footer {
   padding-left: 150px;
   padding-right: 150px;
+  margin-top: 50px;
 }
 @media screen and (max-width: 1199px) {
   footer {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 0 75px;
+  }
+}
+@media screen and (max-width: 991px) {
+  footer {
+    padding: 0 30px;
   }
 }
 footer .container-flex {
-  background-color: grey;
   display: flex;
+  flex-wrap: wrap;
 }
 footer .container-flex .col {
-  height: 100%;
-  float: left;
   background-color: white;
-  width: calc(100% / 7);
+  flex-basis: calc(100% / 8);
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+@media screen and (max-width: 991px) {
+  footer .container-flex .col {
+    flex-basis: calc(100% / 4);
+  }
 }
 footer .container-flex .col:first-child {
   flex-grow: 1;
+  margin-right: 50px;
+}
+footer .container-flex .col:not(:first-child) {
+  margin-right: 25px;
+}
+footer .container-flex .col.clearfix .minilogo {
+  width: 40px;
+  float: left;
+}
+@media screen and (max-width: 991px) {
+  footer .container-flex .col.clearfix .minilogo {
+    width: 80px;
+  }
+}
+footer .container-flex .col.clearfix .minilogo img {
+  width: 100%;
+}
+footer .container-flex .col.clearfix .sub-col {
+  width: calc(100% - 80px + 20px);
+  float: right;
+}
+@media screen and (max-width: 991px) {
+  footer .container-flex .col.clearfix .sub-col {
+    padding-left: calc(30px);
+    width: calc(100% - 80px);
+  }
+}
+footer .container-flex .col.clearfix .sub-col p {
+  font-size: 1.2em;
+}
+footer .container-flex .col.clearfix .sub-col p strong {
+  font-size: 0.8em;
+  color: #2c4792;
+}
+@media screen and (max-width: 991px) {
+  footer .container-flex .col.clearfix {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
 }

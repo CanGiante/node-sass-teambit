@@ -31,12 +31,7 @@ header {
       padding: 0 $sidespace;
       display: flex;
       justify-content: space-between;
-      @media screen and (max-width: 1199px) {
-          padding: 0 #{$sidespace / $sidespace_divider_sm};
-      }
-      @media screen and (max-width: 991px) {
-          padding: 0 #{$sidespace / $sidespace_divider_xs};
-      }
+      @include nav_and_footer_mediaquery;
 
       //logo
       .col-logo {
@@ -150,7 +145,7 @@ header {
       }
 
       .background-image {
-        
+
         flex-basis: 50%;
 
         img {

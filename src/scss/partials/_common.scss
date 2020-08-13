@@ -17,6 +17,11 @@ html {
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
 }
 
 h1 {
@@ -34,4 +39,14 @@ h3 {
 
 h4 {
   font-size: 3em;
+}
+
+h5 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

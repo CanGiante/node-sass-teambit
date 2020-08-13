@@ -1,36 +1,91 @@
-
-
 footer {
 
   padding-left: $sidespace;
   padding-right: $sidespace;
-
-  @media screen and (max-width: 1199px) {
-
-    padding-left: #{$sidespace / 2};
-    padding-right: #{$sidespace / 2};
-
-
-
-  }
+  margin-top: $linespacing;
+  @include nav_and_footer_mediaquery;
 
   .container-flex {
 
-    background-color: grey;
     display: flex;
+    flex-wrap: wrap;
 
     .col {
-      height: 100%;
-      float: left;
+
       background-color: white;
-      width: calc(100% / 7);
+      flex-basis: calc(100% / 8);
+      margin-bottom: 30px;
+      line-height: 30px;
+
+      @media screen and (max-width: 991px) {
+          flex-basis: calc(100% / 4);
+      }
 
       &:first-child {
+
         flex-grow: 1;
+        margin-right: 50px;
 
       }
+
+      &:not(:first-child) {
+
+        margin-right: 25px;
+
+      }
+
     }
 
+    .col.clearfix {
+
+      .minilogo {
+
+        width: 40px;
+        float: left;
+
+        @media screen and (max-width: 991px) {
+            width: $minilogo_space;
+        }
+
+        img {
+
+          width: 100%;
+
+        }
+
+      }
+
+      .sub-col {
+
+        width: calc(100% - #{$minilogo_space} + 20px);
+        float: right;
+        @media screen and (max-width: 991px) {
+            padding-left: calc(#{$sidespace / $sidespace_divider_xs});
+            width: calc(100% - #{$minilogo_space});
+        }
+
+        p {
+
+          font-size: 1.2em;
+
+          strong {
+
+            font-size: 0.8em;
+            color: $tertiary_color;
+
+          }
+
+        }
+
+      }
+
+      @media screen and (max-width: 991px) {
+          flex-basis: 100%;
+          margin-right: 0;
+      }
+
+    }
 
   }
+
 }
