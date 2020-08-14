@@ -1,5 +1,6 @@
 footer {
 
+  min-width: $site_min_width;
   padding-left: $sidespace;
   padding-right: $sidespace;
   margin-top: $linespacing;
@@ -9,16 +10,16 @@ footer {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     .col {
 
       background-color: white;
-      flex-basis: calc(100% / 8);
       margin-bottom: 30px;
       line-height: 30px;
-
-      @media screen and (max-width: 991px) {
-          flex-basis: calc(100% / 4);
+      flex-basis: calc(100% / 8);
+      @media screen and (max-width: 480px) {
+          flex-basis: calc(100% / 3);
       }
 
       &:first-child {
@@ -42,7 +43,6 @@ footer {
 
         width: 40px;
         float: left;
-
         @media screen and (max-width: 991px) {
             width: $minilogo_space;
         }
