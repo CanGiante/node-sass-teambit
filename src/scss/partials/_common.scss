@@ -13,6 +13,7 @@ html {
 
 .site-wrapper {
   min-width: $site_min_width;
+  position: relative;
 }
 
 a {
@@ -27,6 +28,9 @@ ul {
 h1 {
   font-size: 3em;
   line-height: 75px;
+  @media screen and (max-width: 350px) {
+    font-size: 2.6em;
+  }
 }
 
 h2 {
@@ -39,12 +43,16 @@ h3 {
 
 h4 {
   font-size: 3em;
+  @media screen and (max-width: 350px) {
+    font-size: 2.5em;
+  }
 }
 
 h5 {
   font-size: 1.5em;
   margin-bottom: 15px;
 }
+
 .clearfix::after {
   content: "";
   clear: both;

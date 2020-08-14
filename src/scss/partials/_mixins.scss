@@ -82,6 +82,9 @@
 
 @mixin nav_and_footer_mediaquery {
 
+  @media screen and (min-width: 1200px) {
+      padding: 0 #{$sidespace};
+  }
   @media screen and (max-width: 1199px) {
       padding: 0 #{$sidespace / $sidespace_divider_sm};
   }

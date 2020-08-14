@@ -13,6 +13,7 @@
 
 .site-wrapper {
   min-width: 280px;
+  position: relative;
 }
 
 a {
@@ -28,6 +29,11 @@ h1 {
   font-size: 3em;
   line-height: 75px;
 }
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 2.6em;
+  }
+}
 
 h2 {
   font-size: 1.4em;
@@ -39,6 +45,11 @@ h3 {
 
 h4 {
   font-size: 3em;
+}
+@media screen and (max-width: 350px) {
+  h4 {
+    font-size: 2.5em;
+  }
 }
 
 h5 {
@@ -71,6 +82,51 @@ header {
 header .container {
   width: 100%;
 }
+header .container .dropdown {
+  display: none;
+  z-index: 1001;
+  color: #58402c;
+  background-color: white;
+  font-size: 1.7em;
+  line-height: 75px;
+  box-shadow: 0px 4px 8px 2px rgba(66, 66, 66, 0.66);
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  margin-left: -150px;
+  margin-right: -150px;
+}
+@media screen and (min-width: 1200px) {
+  header .container .dropdown {
+    padding: 0 150px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  header .container .dropdown {
+    padding: 0 75px;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .container .dropdown {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  header .container .dropdown {
+    margin-left: -75px;
+    margin-right: -75px;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .container .dropdown {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+header .container .dropdown .menu {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 header .container nav {
   height: 100px;
   line-height: 100px;
@@ -84,6 +140,11 @@ header .container nav {
   padding: 0 150px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+  header .container nav {
+    padding: 0 150px;
+  }
 }
 @media screen and (max-width: 1199px) {
   header .container nav {
@@ -232,6 +293,12 @@ main .teambit-solution {
     padding: 0 75px;
   }
 }
+@media screen and (max-width: 991px) {
+  main .traditional-processes,
+main .teambit-solution {
+    padding: 0 30px;
+  }
+}
 main .traditional-processes h3,
 main .teambit-solution h3 {
   padding-top: 50px;
@@ -298,6 +365,12 @@ main .teambit-solution .row .col div img {
     height: 90px;
   }
 }
+@media screen and (max-width: 300px) {
+  main .traditional-processes .row .col div img,
+main .teambit-solution .row .col div img {
+    height: 70px;
+  }
+}
 main .traditional-processes .row.before,
 main .teambit-solution .row.before {
   border-bottom: 1px solid black;
@@ -318,21 +391,28 @@ main .teambit-solution .row.after img {
   main .traditional-processes .row.before img, main .traditional-processes .row.after img,
 main .teambit-solution .row.before img,
 main .teambit-solution .row.after img {
-    padding: 130px 0;
+    height: 600px;
   }
 }
 @media screen and (max-width: 450px) {
   main .traditional-processes .row.before img, main .traditional-processes .row.after img,
 main .teambit-solution .row.before img,
 main .teambit-solution .row.after img {
-    padding: 150px 0;
+    height: 550px;
   }
 }
 @media screen and (max-width: 350px) {
   main .traditional-processes .row.before img, main .traditional-processes .row.after img,
 main .teambit-solution .row.before img,
 main .teambit-solution .row.after img {
-    padding: 170px 0;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 300px) {
+  main .traditional-processes .row.before img, main .traditional-processes .row.after img,
+main .teambit-solution .row.before img,
+main .teambit-solution .row.after img {
+    height: 450px;
   }
 }
 main .teambit-solution {
@@ -441,10 +521,20 @@ main .get-started .p-box {
   border-radius: 20px;
   padding: 20px 25px;
 }
+@media screen and (max-width: 991px) {
+  main .get-started .p-box {
+    font-size: 1.1em;
+  }
+}
 main .get-started .p-box .signature-box {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+@media screen and (max-width: 350px) {
+  main .get-started .p-box .signature-box {
+    display: block;
+  }
 }
 main .get-started .p-box .signature-box img {
   height: 65px;
@@ -490,6 +580,11 @@ footer {
   padding-left: 150px;
   padding-right: 150px;
   margin-top: 50px;
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 0 150px;
+  }
 }
 @media screen and (max-width: 1199px) {
   footer {
