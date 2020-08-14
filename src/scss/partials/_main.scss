@@ -86,8 +86,14 @@ main {
 
           height: 650px;
           padding: 100px 0;
-          @media screen and (max-width: 480px) {
-              padding: 140px 0;
+          @media screen and (max-width: 550px) {
+              padding: 130px 0;
+          }
+          @media screen and (max-width: 450px) {
+              padding: 150px 0;
+          }
+          @media screen and (max-width: 350px) {
+              padding: 170px 0;
           }
 
         }

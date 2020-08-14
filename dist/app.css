@@ -12,7 +12,7 @@
 }
 
 .site-wrapper {
-  min-width: 370px;
+  min-width: 320px;
 }
 
 a {
@@ -77,7 +77,7 @@ header .container nav {
   font-size: 1.1em;
   background-color: #ffffff;
   width: 100%;
-  min-width: 370px;
+  min-width: 320px;
   position: fixed;
   left: 0;
   top: 0;
@@ -143,7 +143,7 @@ header .container hr {
   position: fixed;
   top: calc(100px - 2px);
   width: calc(100% - 300px);
-  min-width: calc(370px - 150px / 2.5);
+  min-width: calc(320px - 150px / 2.5);
 }
 @media screen and (max-width: 1199px) {
   header .container hr {
@@ -296,11 +296,25 @@ main .teambit-solution .row.after img {
   height: 650px;
   padding: 100px 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   main .traditional-processes .row.before img, main .traditional-processes .row.after img,
 main .teambit-solution .row.before img,
 main .teambit-solution .row.after img {
-    padding: 140px 0;
+    padding: 130px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .traditional-processes .row.before img, main .traditional-processes .row.after img,
+main .teambit-solution .row.before img,
+main .teambit-solution .row.after img {
+    padding: 150px 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  main .traditional-processes .row.before img, main .traditional-processes .row.after img,
+main .teambit-solution .row.before img,
+main .teambit-solution .row.after img {
+    padding: 170px 0;
   }
 }
 main .teambit-solution {
@@ -454,7 +468,7 @@ main .get-started .cta a.sign-up:nth-child(3) {
 }
 
 footer {
-  min-width: 370px;
+  min-width: 320px;
   padding-left: 150px;
   padding-right: 150px;
   margin-top: 50px;
