@@ -63,6 +63,15 @@ main {
 
             height: 120px;
             margin-bottom: 20px;
+            @media screen and (max-width: 550px) {
+                height: 110px;
+            }
+            @media screen and (max-width: 450px) {
+                height: 100px;
+            }
+            @media screen and (max-width: 350px) {
+                height: 90px;
+            }
 
           }
 
