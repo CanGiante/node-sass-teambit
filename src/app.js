@@ -1,13 +1,10 @@
-//TO DO:
-
-//dropdown
-//hover vari
-
 $( document ).ready(function() {
+
+
   $(".close").hide();
   $(".open").show();
 
-  //per mostrare:
+
   $(".open").click(function() {
 
     $(".open").hide();
@@ -16,7 +13,7 @@ $( document ).ready(function() {
 
   });
 
-  //per chiudere:
+
   $(".close").click(function() {
 
     $(".close").hide();
@@ -24,5 +21,6 @@ $( document ).ready(function() {
     $(".dropdown").hide();
 
   });
+  
 
 });

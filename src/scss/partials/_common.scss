@@ -13,7 +13,6 @@ html {
 
 .site-wrapper {
   min-width: $site_min_width;
-  position: relative;
 }
 
 a {
@@ -29,7 +28,11 @@ h1 {
   font-size: 3em;
   line-height: 75px;
   @media screen and (max-width: 350px) {
-    font-size: 2.6em;
+      font-size: 2.6em;
+  }
+  @media screen and (max-width: 290px) {
+      font-size: 2em;
+      line-height: 60px;
   }
 }
 

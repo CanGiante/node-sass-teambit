@@ -93,19 +93,14 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-//TO DO:
-//dropdown
-//hover vari
 $(document).ready(function () {
   $(".close").hide();
-  $(".open").show(); //per mostrare:
-
+  $(".open").show();
   $(".open").click(function () {
     $(".open").hide();
     $(".close").show();
     $(".dropdown").show();
-  }); //per chiudere:
-
+  });
   $(".close").click(function () {
     $(".close").hide();
     $(".open").show();
