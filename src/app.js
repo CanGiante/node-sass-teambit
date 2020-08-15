@@ -10,14 +10,12 @@ $( document ).ready(function() {
 
   });
 
-
   $(".close").click(function() {
 
     $(".close").hide();
     $(".open").show();
     $(".dropdown").hide();
-
+    
   });
-
 
 });
