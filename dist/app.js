@@ -94,7 +94,6 @@
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  $(".close").hide();
   $(".open").show();
   $(".open").click(function () {
     $(".open").hide();

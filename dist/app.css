@@ -175,6 +175,9 @@ header .container nav .hamburger-menu {
   font-size: 40px;
   margin-left: 10px;
 }
+header .container nav .hamburger-menu .close {
+  display: none;
+}
 header .container nav ul.menu li {
   list-style-type: none;
   margin-left: 30px;
@@ -390,6 +393,8 @@ main .teambit-solution .row.after {
 main .traditional-processes .row.before img, main .traditional-processes .row.after img,
 main .teambit-solution .row.before img,
 main .teambit-solution .row.after img {
+  display: block;
+  width: 100%;
   padding: 100px 0;
 }
 main .teambit-solution {

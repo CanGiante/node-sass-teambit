@@ -1,9 +1,6 @@
 $( document ).ready(function() {
 
-
-  $(".close").hide();
   $(".open").show();
-
 
   $(".open").click(function() {
 
@@ -21,6 +18,6 @@ $( document ).ready(function() {
     $(".dropdown").hide();
 
   });
-  
+
 
 });
