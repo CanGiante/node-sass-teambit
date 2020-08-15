@@ -394,8 +394,22 @@ main .traditional-processes .row.before img, main .traditional-processes .row.af
 main .teambit-solution .row.before img,
 main .teambit-solution .row.after img {
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 100px 0;
+}
+@media screen and (min-width: 720px) {
+  main .traditional-processes .row.before img, main .traditional-processes .row.after img,
+main .teambit-solution .row.before img,
+main .teambit-solution .row.after img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1250px) {
+  main .traditional-processes .row.before img, main .traditional-processes .row.after img,
+main .teambit-solution .row.before img,
+main .teambit-solution .row.after img {
+    width: 40%;
+  }
 }
 main .teambit-solution {
   padding-top: 50px;
