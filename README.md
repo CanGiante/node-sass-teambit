@@ -1,1 +1,1 @@
-Ricreare la landing page Teambit con l’utilizzo di SASS, utilizzando tutte le best practice imparate.
+La prima landing page di Teambit rifatta in Scss
